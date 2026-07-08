@@ -1,19 +1,22 @@
-{
-  "name": "file_metadata",
-  "version": "0.0.1",
-  "description": "File Metadata Microservice",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.16.4",
-    "multer": "^1.4.5-lts.1"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "license": "MIT"
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Metadata</title>
+  <link href="/public/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h1>API Project: File Metadata Microservice</h1>
+
+    <h2>Usage:</h2>
+    <p>Please Upload a File ...</p>
+
+    <div class="view">
+      <form action="/api/fileanalyse" method="POST" enctype="multipart/form-data">
+        <input id="inputfield" type="file" name="upfile">
+        <input id="button" type="submit" value="Upload">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
