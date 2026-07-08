@@ -1,63 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>File Metadata</title>
-
-  <link rel="shortcut icon"
-    href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
-    type="image/x-icon"/>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto"
-    rel="stylesheet"
-    type="text/css">
-
-  <link href="/public/style.css"
-    rel="stylesheet"
-    type="text/css">
-</head>
-
-<body>
-
-  <div class="container">
-
-    <h1>API Project: File Metadata Microservice</h1>
-
-    <h2>Usage:</h2>
-
-    <p>Please Upload a File ...</p>
-
-    <div class="view">
-
-      <h3 id="output"></h3>
-
-      <form enctype="multipart/form-data"
-            method="POST"
-            action="/api/fileanalyse">
-
-        <input
-          id="inputfield"
-          type="file"
-          name="upfile">
-
-        <input
-          id="button"
-          type="submit"
-          value="Upload">
-
-      </form>
-
-    </div>
-
-  </div>
-
-  <div class="footer">
-    <p>
-      by
-      <a href="https://www.freecodecamp.org">
-        freeCodeCamp
-      </a>
-    </p>
-  </div>
-
-</body>
-</html>
+{
+  "name": "file_metadata",
+  "version": "0.0.1",
+  "description": "File Metadata Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT"
+}
