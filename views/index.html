@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
 
-<head>
-  <title>File Metadata</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
 
-  <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
+    <title>File Metadata Microservice</title>
 
-  <link href="/public/style.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    >
 
-<body>
+    <link
+      href="/public/style.css"
+      rel="stylesheet"
+      type="text/css"
+    >
+  </head>
 
-  <div class="container">
+  <body>
+    <div class="container">
+      <h1>File Metadata Microservice</h1>
 
-    <h1>API Project: File Metadata Microservice</h1>
+      <h2>Usage</h2>
 
-    <h2>Usage:</h2>
+      <p>Please upload a file.</p>
 
-    <p>Please Upload a File ...</p>
+      <div class="view">
+        <form
+          action="/api/fileanalyse"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input
+            id="inputfield"
+            type="file"
+            name="upfile"
+            required
+          >
 
-    <div class="view">
-
-      <form enctype="multipart/form-data"
-            method="POST"
-            action="/api/fileanalyse">
-
-        <input
-          id="inputfield"
-          type="file"
-          name="upfile">
-
-        <input
-          id="button"
-          type="submit"
-          value="Upload">
-
-      </form>
-
+          <input
+            id="button"
+            type="submit"
+            value="Upload"
+          >
+        </form>
+      </div>
     </div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
